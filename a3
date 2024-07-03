@@ -1,48 +1,35 @@
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class Main {
+Import java.util.Scanner;
+public class calcula1 {
 
-    public static <arraylist, arraylist> void main(String[] arraylist) {
-        arraylist card = new arraylist<String>();
-    }
-    public static void main(String[] arraylist) {
-        arraylist<String> deck = new arraylist<String>();
-        String[] Palo = {"Treboles", "Corazones", "picas", "Diamantes"};
-        String[] Color = {"Rojo", "Negro"};
-        String[] Valor = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "A", "J", "Q", "K",};
+   public static void main (string[] args) {
+         Scanner leer = new Scanner(System.in);
+         int n,a,b;
+         System.out.println(x: "Ingresa 2 numero");
+         a = leer.nextInt();
+         b = leer.nextInt();
+         System.out.println(x: "Ingresa una opcion: \n 1= suma\2= resta\n3= multiplicacion\n4= division");
+         n = leer.nextInt();
+         switch(n){
+             case 1:
+                 System.out.println("La suma de los 2 numeros es: "+(a+b));
+                 break;
+             case 2:
+                 System.out.println("La suma de los numeros es: "+(a-b));
+                 break;
+             case 3:
+                 System.out.println("La multiplicacion de los 2 numeros es: "+(a*b));
+                 break;
+             case 1:
+                 System.out.println("La multiplicacion de los 2 numeros es: "+(a/b));
+                 break;
+             default:
+                 System.out.println(x: "Ingresa un numero entre 1 y 4");                     
 
-    }
+         } 
 
-    Public station void shuffle (ArrayList deck){
-        ArrayList<String> values = deck;
-        Collections.shuffle(calues);
-        System.out.println("\n se mezcla el deck");
-        Iterator<string> = nombreIterator2.next();
-        while (nombre Iterator2.has next());
-        system.out.print(elemento+"\")
-    }
+   }
 
-    Public station void head (ArrayList deck) {
-        System.out.println(deck.get(0));
-        deck.remove (0);
-        system.out.println ("qudan" + deck.size +  "cartas");
-    }
-
-    Public station void pick (ArrayList deck) {
-        System.out.println(deck.get(aleatorio.nextIn(decksize)));
-        deck.remove (aleatorio.nextInt(deck.size()));
-        system.out.println ("qudan" + deck.size +  "cartas");
-    }
-
-    Public station void hand (ArrayList deck) {
-        for (int i=0, i=4; i++){
-            system.out.println(deck.get(i));
-        }
-        for (int i=0, i=4; i++){
-            deck.remove(i);
-        }
-        System.out.println("qudan" + deck.size +  "cartas");
-    }
-
-}
+} 
